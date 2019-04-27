@@ -4,7 +4,10 @@ A continuously-updated repository of common programming design patterns, written
 
 ## Contents
 
-(to be added).
+| Behavioural                                   | Creational                             | Structural                    |
+| --------------------------------------------- | -------------------------------------- | ----------------------------- |
+| [Chain of Responsibility](#)<br>short summary | [Abstract Factory](#)<br>short summary | [Adapter](#)<br>short summary |
+| [Command](#)<br>short summary                 | [Builder](#)<br>short summary          | [Bridge](#)<br>short summary  |
 
 ## Contributors guide
 
