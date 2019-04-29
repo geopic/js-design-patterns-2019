@@ -1,2 +1,3 @@
-# Note-keeping file
+# Note-keeping files
 .gitremind
+patterns/*.js
