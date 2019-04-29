@@ -35,9 +35,7 @@ class Receiver {
    */
   handle(str) {
     if (str === this.data) {
-      console.log(
-        `Argument '${str}' has a match in the chain, argument handled.`
-      );
+      console.log(`Argument '${str}' has a match in the chain, argument handled.`);
       return;
     }
 
@@ -48,9 +46,7 @@ class Receiver {
     }
 
     // No match found, and this object is at the end of the chain
-    console.log(
-      `Argument '${str}' has no match -- it is left unhandled as the chain has reached its end.`
-    );
+    console.log(`Argument '${str}' has no match -- it is left unhandled as the chain has reached its end.`);
   }
 }
 
@@ -64,10 +60,10 @@ class Chain {
    */
   constructor() {
     // Add new receiver objects to handle data one-by-one in the chain.
-    this.hello = new Receiver("hello");
-    this.world = new Receiver("world");
-    this.foo = new Receiver("foo");
-    this.bar = new Receiver("bar");
+    this.hello = new Receiver('hello');
+    this.world = new Receiver('world');
+    this.foo = new Receiver('foo');
+    this.bar = new Receiver('bar');
 
     // Link each receiver object
     this.hello.setNextReceiver(this.world);
@@ -89,10 +85,10 @@ class Chain {
  */
 const sender = () => {
   // Data to pass into the chain
-  const data = ["bar", "baz"];
+  const data = ['bar', 'baz'];
 
   const chain = new Chain();
   chain.trigger(data[0]); // first request is handled in the chain
   chain.trigger(data[1]); // second request is not handled in the chain
-};
+}
 ```
